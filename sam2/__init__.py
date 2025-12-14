@@ -9,3 +9,6 @@ from hydra.core.global_hydra import GlobalHydra
 
 if not GlobalHydra.instance().is_initialized():
     initialize_config_module("sam2", version_base="1.2")
+
+from .build_sam import build_sam2, build_sam2_video_predictor
+from .automatic_mask_generator import SAM2AutomaticMaskGenerator
